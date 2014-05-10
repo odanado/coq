@@ -6,7 +6,7 @@ Inductive pos : Set :=
 
 Fixpoint plus(n m:pos) : pos := 
   match n with
-  | SO => m
+  | SO => S m
   | S p => S (plus p m)
   end.
 
